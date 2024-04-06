@@ -1,4 +1,4 @@
-Simulation
+Simulation (see in raw)
 
 The corona geometry of the black hole sources are simulated using the Monte Carlo radiative transfer code(Monk). The process that has to be followed is as:
 
@@ -64,5 +64,5 @@ The corona geometry of the black hole sources are simulated using the Monte Carl
    /home/path_to_monk-master/bin/calspec /home/path_to_inf_directory/ n en_min en_max inc_min inc_max    # where path to inf is the path where the inf directory is created where the files
                                                                                                           # from the 3dcorona_mpi is located, n is the no. of bins, en_min and en_max is the 
                                                                                                            # minimum and maximum of the energy values in kev, inc_min and inc_max is the 
-                                                                                                            # minimmum and maximum valeu of the inclination angle in deg.
+                                                                                                            # minimmum and maximum value of the inclination angle in deg.
                                                                                   
