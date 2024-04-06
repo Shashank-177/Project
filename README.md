@@ -3,7 +3,7 @@ Simulation
 The corona geometry of the black hole sources are simulated using the Monte Carlo radiative transfer code(Monk). The process that has to be followed is as:
 
 1. The monk code can be downloaded from https://projects.asu.cas.cz/zhang/monk.
-2. The system should have the follwoing requirements:
+2. The system should have the follwoing requirements: 
 - GNU Make
 - C++ compiler that supports c++14 standard; for GCC starting from GCC 5.0
 - MPI library
