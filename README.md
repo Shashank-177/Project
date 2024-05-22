@@ -5,7 +5,7 @@ The corona geometry of the black hole sources are simulated using the Monte Carl
 1. The monk code can be downloaded from https://projects.asu.cas.cz/zhang/monk.
 2. The system should have the follwoing requirements: 
 - GNU Make
-- C++ compiler that supports c++14 standard; for GCC starting from GCC 5.0
+- C++ compiler that supports c++14 standard; for GCC starting from GCC 5.3
 - MPI library
 - libstdc++fs; included in GCC starting from GCC 5.3
 3. In the virgo cluster the module openmpi is installed, to use the mpirun required in the installation, the module is to be loaded as
