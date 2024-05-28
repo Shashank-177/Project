@@ -11,7 +11,7 @@ The package is written in python script for the purpose of data analysis of the 
   import ixpeobssim .core. pipeline as pipeline
   from ixpeobssim .binning. polarization import xBinnedPolarizationCube
 
-3. Using the xpselect option in the ixpeobssim package, give the source and background region and specify the fits file path.
+3. Using the xpselect option in the ixpeobssim package, give the source and background region and specify the fits file path. This is to be done for each detector.
    src_file_list = pipeline.xpselect (file_path , rad=SRC_RAD , suffix='src', overwrite = OVERWRITE )
    bkg_file_list = pipeline.xpselect (file_path ,innerrad=BKG_INNER_RAD , rad=BKG_OUTER_RAD ,suffix='bkg', overwrite = OVERWRITE )
 
