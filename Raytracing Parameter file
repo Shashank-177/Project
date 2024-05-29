@@ -1,1 +1,37 @@
+[physical]
+a = 0.933
+m = 10
+mdot = 0.72
+# corona temperature in kev
+te = 100.
+# Thomson optical depth; for spherical corona tau = ne * sigma_t * R, where ne
+# is the electron density, sigma_t is the Thomson cross section, and R is the
+# radius of the corona. For slab, tau = ne * sigma_t * h / 2, where h is the
+# thickness of the corona
+tau = 1
+fcol = 1.7
+rin = 1.3
+
+[gridsize]
+# number of photons sampled for one geodesic
+nphoton = 10000
+
+[option]
+# tell `3dcorona_mpi` to perform radiative transfer inside the corona
+type = 2
+# if the polarized radiative transfer is switched on
+pol = 1
+# the step size
+dr = 0.001
+# whether to print the progress
+progress = 1
+# whether to assume Klein-Nishina cross section
+KN = 1
+# if chandra = 0, we assume the disc emission is isotropic and is unploarized.
+# Otherwise we use the Chandrasekhar's formula (Section X, Chandrasekhar 1960) for a semi-infinite scattering
+# atmosphere to determine the disc photon's directionality and polarization angle/degree
+chandra = 0
+scafile = /scratch2/shashank/4U1630-47/sphere/sca_params.dat
+gparamfile = /scratch2/shashank/4U1630-47/sphere/gparams.dat
+# Raytracing parameter file is same for all the geometries
 
