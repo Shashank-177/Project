@@ -1,0 +1,31 @@
+[physical]
+# black hole spin
+a = 0
+# the geometry of the corona; 1 for a stationary slab; and 5 for a slab
+# co-rotating with the disc
+gtype = 1
+# the minimum height of the corona, in GM/c2
+hmin = 3.
+# the maximum height of the corona, in GM/c2
+hmax = 7.
+# radial extent of the corona, in GM/c2
+s = 20.
+# inner edge of the disc, in GM/c^2; if rin < rms, then rin = rms
+rin = 1.22
+# outer edge of the disc, in GM/c^2
+rout = 1000.
+
+[gridsize]
+# number of radial bins on the disc
+nr = 100
+# number of bins in the polar emission angle of the seed photon
+nphi = 100
+# number of bins in the azimuthal emission angle of the seed photon
+ntheta = 100
+# the maximum polar emission angle over PI; 0.5 means the maximum angle is half
+# PI
+thetamax = 0.5
+
+[option]
+# tells `3dcorona` to perform geodesic calculations
+type = 0
