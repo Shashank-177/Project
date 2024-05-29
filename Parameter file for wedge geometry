@@ -1,0 +1,26 @@
+[physical]
+# black hole spin
+a = 0.933
+# the geometry of the corona; 2 for a stationary truncated disc
+gtype = 6
+# inner edge of the disc, in GM/c^2; if rin < rms, then rin = rms
+rin = 1.22
+# outer edge of the disc, in GM/c^2
+rout = 1000.
+smin = 2.5
+smax = 18
+maxmu = 0.9063
+
+[gridsize]
+# number of radial bins on the disc
+nr = 100
+# number of bins in the polar emission angle of the seed photon
+nphi = 100
+# number of bins in the azimuthal emission angle of the seed photon
+ntheta = 200
+# the maximum polar emission angle over PI; 1. means the maximum angle is PI
+thetamax = 1.
+
+[option]
+# tells `3dcorona` to perform geodesic calculations
+type = 0
