@@ -1,10 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-con_deg_500 = []
-con_ang_500 = []
-
 bin = ['2-3.5','3.5-5','5-6.5','6.5-8']
+
+#function to read and extract the polarization file
 def pol_deg(geometry,specification,list_name):
 
   for i in bin:
@@ -20,9 +19,6 @@ def pol_ang(geometry,specification,list_name):
             list_name.append(path_ang)
 
 
-pol_deg('/conical','/kt500/',con_deg_500)
-pol_ang('/conical','/kt500/',con_ang_500)
-
 def get_list_name(lst):
     for name, value in globals().items():
         if value is lst:
@@ -34,6 +30,8 @@ label2 = ['slab geometry','spherical geometry','conical geomtery']
 label3 = ['velocity 0','velocity 0.3','velocity 0.5']
 label4 = ['opening_angle 20','opening_angle 30','opening_angle 40']
 label5 = ['case 1','case 2','case 3','case 4']
+
+#function to 
 def plot(deg_list, ang_list, r_lim, theta_max, theta_min,label_name):
     fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
     for i in range(len(deg_list)):
@@ -59,7 +57,8 @@ def plot(deg_list, ang_list, r_lim, theta_max, theta_min,label_name):
     list_name_var = get_list_name(deg_list)
     #plt.title('Polar Plot of Pol_deg vs Pol_ang for ' + list_name_var + ' geometry')
     plt.show()
-  
+
+#Example of a case for spherical geometry  
 sph_deg_100_ws = []
 sph_deg_100_sam = []
 sph_deg_100_geet = []
@@ -67,6 +66,7 @@ sph_ang_100_ws = []
 sph_ang_100_sam = []
 sph_ang_100_geet = []
 
+#read polarization files
 pol_deg('4U1630-47/','/spherical','/sph2/kt100_ws/pol/',sph_deg_100_ws)
 pol_ang('4U1630-47/','/spherical','/sph2/kt100_ws/pol/',sph_ang_100_ws)
 
@@ -79,6 +79,7 @@ pol_ang('4U1630-47/','/spherical','/sph2/kt100_geet/pol/',sph_ang_100_geet)
 sph_deg_kt100 = [sph_deg_100_ws,sph_deg_100_sam,sph_deg_100_geet]
 sph_ang_kt100 = [sph_ang_100_ws,sph_ang_100_sam,sph_ang_100_geet]
 
+#Plotting the polarization parameters
 plot(sph_deg_kt100,sph_ang_kt100,0.04,10,90,label5)
 
 
